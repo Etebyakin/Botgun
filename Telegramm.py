@@ -4,8 +4,8 @@ import requests
 import datetime
 class BotHandler:
 def __init__(self, token):
-        self.token = token
-        self.api_url = "https://api.telegram.org/bot{}/".format(token)
+        self.token = 478252579:AAHwXNSmkUjQr8Q72ospuEXjlZvZZiK4hkY
+        self.api_url = "https://api.telegram.org/bot478252579:AAHwXNSmkUjQr8Q72ospuEXjlZvZZiK4hkY/".format(token)
 def get_updates(self, offset=None, timeout=30):
         method = 'getUpdates'
         params = {'timeout': timeout, 'offset': offset}
@@ -25,7 +25,7 @@ if len(get_result) > 0:
             last_update = get_result[len(get_result)]
 return last_update
 
-reet_bot = BotHandler(token)
+greet_bot = BotHandler(token)
 greetings = ('hello', 'hi', 'greetings', 'sup')
 now = datetime.datetime.now()
 def main():
